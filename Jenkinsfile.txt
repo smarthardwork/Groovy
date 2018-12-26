@@ -1,1 +1,1 @@
-String[] words = new File('word.txt')
+def words = new File('word.txt') as String[]
