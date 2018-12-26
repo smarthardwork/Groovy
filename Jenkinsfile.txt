@@ -1,5 +1,5 @@
 def words = []
-new File( 'http://192.168.100.7:8080/job/Test/20/execution/node/2/ws/words.txt' ).eachLine { line ->
+new File( '/var/lib/jenkins/workspace/Test@script ).eachLine { line ->
     words << line
 }
 
