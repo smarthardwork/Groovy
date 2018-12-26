@@ -1,4 +1,4 @@
 String[] words = new File('/var/lib/jenkins/workspace/kk/words.txt')
-properties([parameters([choice(choices: ['good', 'bad', 'average'], description: '', name: 'Krishna')])])
+properties([parameters([choice(choices: ['$words'], description: '', name: 'Krishna')])])
 return words
 
