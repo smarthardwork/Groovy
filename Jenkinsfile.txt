@@ -1,9 +1,1 @@
-def words = []
-new File( '/var/lib/jenkins/workspace/kk).eachLine { line 
-    words << line
-}
-
-// print them out
-words.each {
-    println it
-}
+String[] words = new File('words.txt')
