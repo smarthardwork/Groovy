@@ -1,5 +1,5 @@
 def words = []
-new File( '/var/lib/jenkins/workspace/Test@script ).eachLine { line ->
+new File( '/var/lib/jenkins/workspace/kk).eachLine { line ->
     words << line
 }
 
