@@ -1,5 +1,5 @@
 def words = []
-new File( 'words.txt' ).eachLine { line ->
+new File( '.words.txt' ).eachLine { line ->
     words << line
 }
 
