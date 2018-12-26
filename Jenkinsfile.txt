@@ -1,1 +1,9 @@
-def words = new File('word.txt.txt') as String[]
+def words = []
+new File( 'words.txt' ).eachLine { line ->
+    words << line
+}
+
+// print them out
+words.each {
+    println it
+}
