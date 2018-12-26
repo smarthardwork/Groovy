@@ -1,4 +1,16 @@
-String[] words = new File('/var/lib/jenkins/workspace/kk/words.txt')
-properties([parameters([choice(choices: $['words'], description: '', name: 'Krishna')])])
-return words
+filename = '/var/lib/jenkins/workspace/kk/words.txt'
+File fh1 = new File(filename)
+text = fh1.getText('UTF-8')
+ File fh2 = new File(filename)
+def lines = fh2.readLines()
+for (line in lines) {
+    // ...
+}
+  
+File fh3 = new File(filename)
+LineNumberReader reader = fh3.newReader()
+while ((line = reader.readLine()) != null) {
+    // ...
+}
+
 
