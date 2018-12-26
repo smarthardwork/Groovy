@@ -1,2 +1,2 @@
-String[] words = new File('/var/lib/jenkins/workspace/kk/words.txt')
-print words
+def words = new File('/var/lib/jenkins/workspace/kk/words.txt') as String[]
+println it
