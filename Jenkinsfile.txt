@@ -1,1 +1,2 @@
 String[] words = new File('/var/lib/jenkins/workspace/kk/words.txt')
+print words
